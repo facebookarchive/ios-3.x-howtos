@@ -19,7 +19,7 @@
 #import "ViewController.h"
 
 NSString *const FBSessionStateChangedNotification =
-@"com.facebook.samples.BatchRequestsHowTo:FBSessionStateChangedNotification";
+@"com.facebook.samples.FeedDialogHowTo:FBSessionStateChangedNotification";
 
 @implementation AppDelegate
 
@@ -64,12 +64,7 @@ NSString *const FBSessionStateChangedNotification =
  * Opens a Facebook session and optionally shows the login UX.
  */
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI {
-    NSArray *permissions = [[NSArray alloc]
-                            initWithObjects:
-                            @"publish_actions",
-                            @"read_stream",
-                            nil];
-    return [FBSession openActiveSessionWithPermissions:permissions
+    return [FBSession openActiveSessionWithPermissions:nil
                                           allowLoginUI:allowLoginUI
                                      completionHandler:^(FBSession *session,
                                                          FBSessionState state,

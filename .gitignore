@@ -1,0 +1,9 @@
+*/build/
+*/.DS_Store
+*/*.xcodeproj/*.pbxuser
+*/*.xcodeproj/*.mode*
+*/*.xcodeproj/xcuserdata*
+*/*.xcodeproj/project.xcworkspace
+*~
+*#
+.arcconfig
