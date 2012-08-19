@@ -22,6 +22,8 @@ NSString *const FBSessionStateChangedNotification =
 @"com.facebook.samples.BatchRequestsHowTo:FBSessionStateChangedNotification";
 
 @implementation AppDelegate
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 /*
  * Callback for session changes.

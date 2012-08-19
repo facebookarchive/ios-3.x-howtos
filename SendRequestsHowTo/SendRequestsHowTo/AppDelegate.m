@@ -34,6 +34,8 @@ FBDialogDelegate>
 
 @implementation AppDelegate
 
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 @synthesize appUsageCheckEnabled = _appUsageCheckEnabled;
 @synthesize facebook = _facebook;
 @synthesize openedURL = _openedURL;
